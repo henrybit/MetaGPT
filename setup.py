@@ -21,11 +21,18 @@ class InstallMermaidCLI(Command):
 
 
 here = path.abspath(path.dirname(__file__))
+print(here)
 
-with open(path.join(here, "README.md"), encoding="utf-8") as f:
+# with open(path.join(here, "README.md"), encoding="utf-8") as f:
+#     long_description = f.read()
+
+# with open(path.join(here, "requirements.txt"), encoding="utf-8") as f:
+#     requirements = [line.strip() for line in f if line]
+
+with open("/Users/qipenghui/studio/develop/code/ai_project/MetaGPT/README.md", encoding="utf-8") as f:
     long_description = f.read()
 
-with open(path.join(here, "requirements.txt"), encoding="utf-8") as f:
+with open("/Users/qipenghui/studio/develop/code/ai_project/MetaGPT/requirements.txt", encoding="utf-8") as f:
     requirements = [line.strip() for line in f if line]
 
 setup(
